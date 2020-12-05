@@ -1,0 +1,13 @@
+
+.background {
+	background: #bb978a7a;  /
+	background: -webkit-linear-gradient(to right, #ffc10754, #bb978a7a); 
+	background: linear-gradient(to right, #ffc10754, #bb978a7a); 
+}
+
+
+.text-style {
+	font-family: 'OptimaLight';
+}
+
+

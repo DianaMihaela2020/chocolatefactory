@@ -1,0 +1,17 @@
+
+p{
+	text-align: justify;
+}
+
+.background{
+	background-image: url("../img/background2.jpg");
+	background-size:contain;
+}
+
+.container {
+	background-color: white; 
+	width:70%;
+	padding: 50px;
+	border: 5px solid #79554829;
+	margin-bottom: 50px;
+}

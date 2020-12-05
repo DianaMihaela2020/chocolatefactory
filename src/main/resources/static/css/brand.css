@@ -1,0 +1,26 @@
+
+
+.video{
+	margin-top: 100px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.brand-header{
+	height: 100px;
+	width: 100%;
+	background-image: url("../img/img42.jpg");
+	text-shadow: 1px 1px #f7ead6;
+	color: #4e352cf7;
+}
+
+.sortimente {
+	border: solid ;
+	color:#3e2d28e0 ;
+	margin: 1px;
+}
+
+
+.text-style {
+	font-family:  'OptimaLight';
+}
+
