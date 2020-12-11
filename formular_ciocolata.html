@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css\campanii.css">
+
+	<title>Ciocolata</title>
+	
+</head>
+
+
+<body class="background">
+		<iframe src="meniu.html" width="100%" style="border:none;height: 110px;"></iframe>
+	<center>
+				<h1 style="font-family: 'Parisienne', cursive; text-shadow: 2px 2px white; " class="m-5"><b>Lindt</b> - Master chocolatier since 1845</h1>
+		<img src="img\header.png" width="650"height = "600" style="padding-bottom: 40px; border-style: hidden;margin-bottom: 10%;" >
+	</center>
+	
+	<div class="container">
+		<h4 style="text-align: center;" class= "m-5" >Studiu privind satisfacția consumatorilor față de ciocolată Lindt</h4>
+		<p style="font-size: 18px" class="pt-4"><b>Lindt & Sprüngli</b> este liderul incontestabil pe piața ciocolatei premium, oferind o mare varietate de produse în peste 100 de tari din lume. In cei peste 160 ani de existenta, Lindt & Sprüngli a ajuns sa fie cunoscuta drept una dintre cele mai inovative și mai creative companii producatoare de ciocolata premium, având 6 fabrici în Europa, 2 în Statele Unite ale Americii si puncte de distributie si vânzare pe 4 continente. Inceputul companiei Lindt & Sprüngli dateaza din 1845. De atunci și pâna acum, au avut loc multe schimbari în companie, dar spiritul antreprenorial și pasiunea pentru fabricarea ciocolatei care a caracterizat atât familia Sprüngli, cât și pe Rudoplh Lindt, au ramas aceleași. </p>
+		<br>
+		<br>
+		<h6> Va rugam sa completati acest chestionar pentru a ne putea face o impresie despre gradul de satisfactie al consumatorilor fata de ciocolata Lindt.<br>
+		Va multumim!</h6>
+		<p><i>(Campurile marcate cu * sunt obligatorii).</i></p>
+		<br>
+		<form>
+
+			<p>1. Sunteți consumator/oare de ciocolată Lindt? *</p>
+
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="consumator" id="idDa" value="raspuns-da" >
+				<label class="form-check-label" for="idDa">
+					da
+				</label>
+			</div>
+
+
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="consumator" id="idNu" value="raspuns-nu" >
+				<label class="form-check-label" for="idNu">
+					nu
+				</label>
+			</div>
+
+			<br>	
+
+			<div class="form-group">
+
+				<label for="brand">2. Care este brandul preferat de ciocolată? *</label>
+				<select class="form-control" id="brand">
+					<option value="Lindt">Lindt</option >
+					<option value="Toblerone">Toblerone</option>
+					<option value="Heidi">Heidi</option>
+					<option value="Rafaello">Rafaello</option>
+					<option value="Kinder">Kinder</option>
+					<option value ="Milka">Milka</option>
+					<option value="Novatini">Novatini</option>
+					<option value="Primola">Primola</option>
+				</select>
+			</div>
+			<label>3. De unde obișnuiți să achiziționați ciocolată Lindt?</label>
+			<br>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="supermarket" id="supermarket">
+				<label class="form-check-label" for="supermarket">
+					Supermarket
+				</label>
+			</div>
+
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="supermarket" id="hypermarket">
+				<label class="form-check-label" for="hypermatket">
+					Hypermarket
+				</label>
+			</div>
+
+
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="magazin" id="magazin">
+				<label class="form-check-label" for="magazin">
+					Magazin alimentar
+				</label>
+			</div>
+
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="cofetarie" id="cofetarie">
+				<label class="form-check-label" for="cofetarie">
+					Cofetărie
+				</label>
+			</div>
+			<br>
+			
+
+			<div class="form-group">
+				<label class="my-1 mr-2" for="inlineFormCustomSelectPref">4. Pe o scară de la 1 (min) la 5 (max) care credeți că este cea mai cunoscută marca de ciocolată din România? *</label>
+				<div class="form-group">
+					<table class="table table-bordered table-sm">
+						<thead>
+
+							<tr style="text-align: center;">
+								<th scope="col"></th>
+								<th scope="col">1</th>
+								<th scope="col">2</th>
+								<th scope="col">3</th>
+								<th scope="col">4</th>
+								<th scope="col">5</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><center>Lindt</center></td>
+								<td><center><input  type="radio" name="Lindt" id="Lindt-1" value="Lindt-1"></center></td>
+								<td><center><input  type="radio" name="Lindt" id="Lindt-2" value="Lindt-2"></center></td>
+								<td><center><input  type="radio" name="Lindt" id="Lindt-3" value="Lindt-3"></center></td>
+								<td><center><input  type="radio" name="Lindt" id="Lindt-4" value="Lindt-4"></center></td>
+								<td><center><input  type="radio" name="Lindt" id="Lindt-5" value="Lindt-5"></center></td>
+							</tr>
+							<tr>
+								<td><center>Milka</center></td>
+								<td><center><input  type="radio" name="Milka" id="Milka-1" value="Milka-1"></center></td>
+								<td><center><input  type="radio" name="Milka" id="Milka-2" value="Milka-2"></center></td>
+								<td><center><input  type="radio" name="Milka" id="Milka-3" value="Milka-3"></center></td>
+								<td><center><input  type="radio" name="Milka" id="Milka-4" value="Milka-4"></center></td>
+								<td><center><input  type="radio" name="Milka" id="Milka-5" value="Milka-5"></center></td>
+							</tr>
+							<tr>
+								<td><center>Kinder</center></td>
+								<td><center><input  type="radio" name="Kinder" id="Kinder-1" value="Kinder-1"></center></td>
+								<td><center><input  type="radio" name="Kinder" id="Kinder-2" value="Kinder-2"></center></td>
+								<td><center><input  type="radio" name="Kinder" id="Kinder-3" value="Kinder-3"></center></td>
+								<td><center><input  type="radio" name="Kinder" id="Kinder-4" value="Kinder-4"></center></td>
+								<td><center><input  type="radio" name="Kinder" id="Kinder-5" value="Kinder-5"></center></td>	
+							</tr>
+
+							<tr>
+								<td><center>Rafaello</center></td>
+								<td><center><input  type="radio" name="Rafaello" id="Rafaello-1" value="Rafaello-1"></center></td>
+								<td><center><input  type="radio" name="Rafaello" id="Rafaello-2" value="Rafaello-1"></center></td>
+								<td><center><input  type="radio" name="Rafaello" id="Rafaello-3" value="Rafaello-1"></center></td>
+								<td><center><input  type="radio" name="Rafaello" id="Rafaello-4" value="Rafaello-1"></center></td>
+								<td><center><input  type="radio" name="Rafaello" id="Rafaello-5" value="Rafaello-1"></center></td>
+							</tr>
+							<tr>
+								<td><center>Toblerone</center></td>
+								<td><center><input  type="radio" name="Toblerone" id="Toblerone-1" value="Toblerone-1"></center></td>
+								<td><center><input  type="radio" name="Toblerone" id="Toblerone-2" value="Toblerone-2"></center></td>
+								<td><center><input  type="radio" name="Toblerone" id="Toblerone-3" value="Toblerone-3"></center></td>
+								<td><center><input  type="radio" name="Toblerone" id="Toblerone-4" value="Toblerone-4"></center></td>
+								<td><center><input  type="radio" name="Toblerone" id="Toblerone-5" value="Toblerone-5"></center></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+
+				<br>
+				<div class="form-group">
+					<label class="my-1 mr-2" for="inlineFormCustomSelectPref">5. Ce cantitate de ciocolată consumați într-o săptămână? *</label>
+					<select class="custom-select my-1 mr-sm-2" id="cantitateConsumator">
+						<option selected>Choose...</option>
+						<option value="1">50 de grame</option>
+						<option value="2">100 de grame</option>
+						<option value="3">Intre 100 si 500 de grame</option>
+						<option value="4">Mai mult de 500 de grame</option>
+						<option value="5">Deloc</option>
+					</select>
+				</div>
+				<br>
+
+				<p> 6. Care este părerea dvs despre ambalajul ciocolatei Lindt? *</p>
+				<div class="form-group">
+					<table class="table table-bordered table-sm">
+						<thead>
+							<tr style="text-align: center;">
+								<th scope="col">Foarte proastă</th>
+								<th scope="col">Proastă</th>
+							<th scope="col">Satisfăcătoare</th>
+								<th scope="col">Bună</th>
+								<th scope="col">Foarte bună</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><center><input  type="radio" name="ambalaj" id="foarte-prost" value="foarte-prost"></center></td>
+								<td><center><input  type="radio" name="ambalaj" id="prost" value="prost"></center></td>
+								<td><center><input  type="radio" name="ambalaj" id="satisfacator" value="satisfacator"></center></td>
+								<td><center><input  type="radio" name="ambalaj" id="buna" value="buna"></center></td>
+								<td><center><input  type="radio" name="ambalaj" id="foarte-buna" value="foarte-buna"></center></td>
+							</tr>
+
+						</tbody>
+
+					</table>
+				</div>
+				<p class="mt-5"> 7. Ce va determina să alegeți o anumită marca de ciocolată? *</p>
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="gustul" id="idAmbalaj" value="raspuns-ambalajul">
+					<label class="form-check-label" for="idAmbalaj">
+						Ambalajul
+					</label>
+				</div>
+
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="gustul" id="idReclama" value="raspuns-reclama" >
+					<label class="form-check-label" for="idReclama">
+						Reclama
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="gustul" id="idGust" value="raspuns-gust">
+					<label class="form-check-label" for="idGust">
+						Gustul
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="gustul" id="idPret" value="raspuns-pret" >
+					<label class="form-check-label" for="idPret">
+					Prețul
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="gustul" id="idAnother" value="raspuns-another" >
+					<label class="form-check-label" for="idAnother">
+						Alte motive (va rugăm să specificați)
+					</label>
+				</div>
+				<br>
+
+				<div class="form-group">
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+				</div>
+				<br>
+
+				<div class="form-group">
+					<label class="mb-4">8. Ce alte mărci de ciocolată preferați? *</label>
+					<div class="form-group row">
+						<label for="cioco1" class="col-sm-2 col-form-label">Ce alte mărci de ciocolată preferați? </label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="cioco1">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="cioco2" class="col-sm-2 col-form-label">Marca numărul 2</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="cioco2">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="cioco3" class="col-sm-2 col-form-label">Marca numărul 3</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="cioco3">
+						</div>
+					</div>
+				</div>
+				<br>
+
+
+				<label> 9. Cum obișnuiți să consumați ciocolată preferată, Lindt? *</label>
+				<br>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="Singur" id="Singur">
+					<label class="form-check-label" for="Singur">
+						Singur/a
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="cu-familia" id="cu-familia">
+					<label class="form-check-label" for="cu-familia">
+						Cu familia
+					</label>
+				</div>
+
+
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="cu-colegii" id="cu-colegii">
+					<label class="form-check-label" for="cu-colegii">
+						Cu colegii
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="cu-prietenii" id="cu-prietenii">
+					<label class="form-check-label" for="cu-prietenii">
+						Cu prietenii
+					</label>
+				</div>
+				<br>
+				<p>10. Ce suma de bani (lei) obișnuiți să plătiți pentru o ciocolată? </p>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="suma" id="suma1" value = "suma1">
+					<label class="form-check-label" for="suma1">
+						Intre 2 si 3
+					</label>
+					<br>
+					<input class="form-check-input" type="radio" name="suma" id="suma2" value = "suma2">
+					<label class="form-check-label" for="suma2">
+						Intre 3 si 4
+					</label>
+					<br>
+					<input class="form-check-input" type="radio" name="suma" id="suma3" value = "suma3">
+					<label class="form-check-label" for="suma3">
+						Intre 5 si 6
+					</label>
+					<br>
+					<input class="form-check-input" type="radio" name="suma" id="suma4" value = "suma4">
+					<label class="form-check-label" for="suma4">
+						Peste 10 
+					</label>
+				</div>
+				<br>
+				<p> 11. Ați recomandă/t ciocolată Lindt și altor persoane? *</p>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="recomandare" id="da" value = "da-val">
+					<label class="form-check-label" for="da">
+						Da
+					</label>
+				</div>  
+
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name = "recomandare" value="nu-val" id="nu">
+					<label class="form-check-label" for="nu">
+						Nu
+					</label>
+				</div>
+
+				<br>
+
+				<div class="form-group">
+					<label for="oras">10. Care este domiciliul dumneavoastră? *</label>
+					<input type="text" class="form-control" id="oras" placeholder="Cluj-Napoca">
+				</div>
+
+				<div class="form-group">
+					<label for="varsta">11. Care este vârstă dumneavoastră? *</label>
+					<input type="number" class="form-control" id="varsta"min = "18">
+				</div>
+
+				<p>12. În ce categorie de venit va încadrați? * </p>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name = "consumator" value="sub1000" id="idsub1000">
+					<label class="form-check-label" for="idsub1000">
+						Sub 1000 lei/luna
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="consumator" id="id1000-2000" value="1000-2000">
+					<label class="form-check-label" for="id1000-2000">
+						Intre 1000 si 2000 lei/lună
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="consumator" id="id2000-3000" value="2000-3000">
+					<label class="form-check-label" for="id2000-3000">
+						Intre 2000 si 3000 lei/lună
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="consumator" id="idpeste3000" value="peste3000">
+					<label class="form-check-label" for="idpeste3000">
+						Peste 3000 lei/lună
+					</label>
+				</div>
+				<br>
+
+
+				<p>13. Sunteti de sex: *</p>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="feminin" value = "feminin-val">
+					<label class="form-check-label" for="feminin">
+						Feminin
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios" id= "masculin" value = "masculin-val">
+					<label class="form-check-label" for="masculin">
+						Masculin
+					</label>
+				</div>	
+				<br>
+				<br>
+
+				<center><button type="button" class="btn btn-outline-secondary" onclick="trimiteFormular()">Trimite</button></center>
+			</form>
+
+			
+
+
+		</div>
+		<script type="text/javascript">
+			
+
+			function trimiteFormular() {
+				location.replace("multumiri.html");
+			}
+		</script>
+
+</body>
+</html>
