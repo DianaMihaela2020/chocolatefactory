@@ -87,4 +87,80 @@ li a {
 }
 
 
+// CSS - pagina brand
+
+
+.video{
+	margin-top: 100px;
+	margin-bottom: 50px;
+
+}
+.brand-header{
+	height: 100px;
+	width: 100%;
+	background-image: url("../img/img42.jpg");
+	text-shadow: 1px 1px #f7ead6;
+	color: #4e352cf7;
+}
+
+.sortimente {
+	border: solid ;
+	color:#3e2d28e0 ;
+	margin: 1px;
+}
+
+
+.text-style {
+	font-family:  'OptimaLight';
+}
+
+//CSS pentru pagina de Produse
+
+
+.background-produse {
+	background: #bb978a7a;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ffc10754, #bb978a7a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ffc10754, #bb978a7a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container-produse .col {
+	text-align: center;
+
+}
+
+.container-produse {
+	border-radius: 25px;
+}
+
+// CSS pentru Campanii
+
+
+.container-campanii p{
+	text-align: justify;
+}
+
+.background-campanii{
+	background-image: url("../img/background2.jpg");
+	background-size:contain;
+}
+
+.container-campanii {
+	background-color: white;
+	width:70%;
+	padding: 50px;
+	border: 5px solid #79554829;
+	margin-bottom: 50px;
+}
+// CSS pentru pagina de Contact
+
+.background-contact {
+	background: #bb978a7a;  /
+	background: -webkit-linear-gradient(to right, #ffc10754, #bb978a7a);
+	background: linear-gradient(to right, #ffc10754, #bb978a7a);
+}
+
+
+
+
+
+
 
