@@ -5,8 +5,17 @@
 
     <link rel="icon" type="img\favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css\home.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
@@ -16,43 +25,50 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css\home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 </head>
 <body>
 
-<ul class="d-flex align-items-center">
-    <li>
-        <img src="img\logo.jpg">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="img\logo.jpg" style="max-width:80%">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-light">
+                <li class="nav-item">
+                    <a class="nav-link "  href="/">ACASĂ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="brand">BRAND</a>
+                </li>
 
-    </li>
-    <li>
-        <a href="/">ACASĂ</a>
-    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produse">PRODUSE</a>
+                </li>
 
-    <li>
-        <a href="brand">BRAND</a>
-    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formular_ciocolata_personalizata">PERSONALIZARE</a>
+                </li>
 
-    <li>
-        <a href="produse">PRODUSE</a>
-    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formular_ciocolata">CAMPANII</a>
+                </li>
 
-    <li>
-        <a href="formular_ciocolata_personalizata">PERSONALIZARE</a>
-    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">CONTACT</a>
+                </li>
+            </ul>
 
-    <li>
-        <a href="formular_ciocolata">CAMPANII</a>
-    </li>
-
-    <li>
-        <a href="contact">CONTACT</a>
-    </li>
-</ul>
-
+        </div>
+    </div>
+</nav>
 
 <div class="brand-header d-flex align-items-center justify-content-center">
     <h4>THE LINDT & SPRÜNGLI GROUP - CIOCOLATA PREMIUM DE 175 DE ANI</h4>
@@ -60,9 +76,10 @@
 </div>
 
 <div class="container">
-    <h3 class=" my-5 text-style">ABOUT US</h3>
+    <h3 class=" my-5 text-style">Despre noi</h3>
     <div class="row">
-        <div class="col-8"><p class="text-justify">
+        <div class="col-lg-8 col-sm-12">
+            <p class="text-justify">
             Lindt & Sprüngli este recunoscută ca lider pe piața ciocolatei de calitate premium, oferind o gamă largă de
             produse în peste 120 de țări din întreaga lume. De-a lungul a aproape 175 de ani de existență a Lindt &
             Sprüngli, a devenit cunoscută ca una dintre cele mai inovatoare și creative companii care produc ciocolată
@@ -83,72 +100,49 @@
             miliarde CHF în 2017.</p>
             <img class="mb-2" src="img\img16.jpg" width="100%" style="border: solid #865e52e0 2px;">
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-sm-12">
             <img style="width: inherit" src="img\favicon.png ">
         </div>
-
 
     </div>
 </div>
 
 
-<div class="container my-5">
+<div class="container my-5 text-center">
 
-    <h4 class="my-5"> Sortimentele noastre de ciocolata</h4>
-
-    <div class="row mt-3">
-        <div class="col text-center">
-            LINDOR
-        </div>
-        <div class="col text-center">
-            Praline de ciocolata asortate Lindor, 350gr
-        </div>
-
-        <div class="col text-center">
-            Gold Bunny
-        </div>
-    </div>
-
+    <center><h4 class="my-5"> Sortimentele noastre de ciocolată„</h4></center>
 
     <div class="row">
-        <div class="col">
+        <div class="col-lg-4 col-sm-12">
             <img src="img\img17.jpg" width="100%" style="border: solid #3e2d28e0 2px;">
+            <p> LINDOR</p>
         </div>
-        <div class="col">
+        <div class="col-lg-4 col-sm-12">
             <img src="img\img18.jpg" width="100%" style="border: solid #3e2d28e0 2px;">
+            <p> Praline de ciocolata asortate Lindor, 350gr</p>
         </div>
 
-        <div class="col">
+        <div class="col-lg-4 col-sm-12">
             <img src="img\img19.jpg" width="100%" style="border: solid #3e2d28e0 2px;">
+            <p> Gold Bunny</p>
         </div>
 
     </div>
 
-
-    <div class="row mt-3">
-
-        <div class="col text-center">
-            TEDDY BEAR
-        </div>
-        <div class="col text-center">
-            Hello
-        </div>
-        <div class="col text-center">
-            Creation
-        </div>
-
-    </div>
 
 
     <div class="row">
-        <div class="col">
+        <div class="col-lg-4 col-sm-12">
             <img src="img\img20.jpg" width="100%" style="border: solid #3e2d28e0 2px;">
+            <p> TEDDY BEAR</p>
         </div>
-        <div class="col">
+        <div class="col-lg-4 col-sm-12">
             <img src="img\img21.jpg" width="100%" style="border: solid #3e2d28e0 2px;">
+            <p> Hello</p>
         </div>
-        <div class="col">
+        <div class="col-lg-4 col-sm-12">
             <img src="img\img22.jpg" width="100%" style="border: solid #3e2d28e0 2px;">
+            <p> Creation</p>
         </div>
 
     </div>
@@ -157,36 +151,34 @@
     <h4 class="my-5"> Alte branduri</h4>
 
     <div class="row">
-        <div class="col">
+        <div class="col-lg-3 col-sm-12">
             <img src="img\img23.png" style="width: inherit;">
-
         </div>
-        <div class="col">
+        <div class="col-lg-3 col-sm-12">
 
             <img src="img\img24.png" style="width: inherit;">
         </div>
-        <div class="col">
+        <div class="col-lg-3 col-sm-12">
             <img src="img\img25.png" style="width: inherit;">
 
         </div>
 
-        <div class="col">
+        <div class="col-lg-3 col-sm-12">
             <img src="img\img26.png" style="width: inherit;">
-
         </div>
 
     </div>
 
     <div class="row">
-        <div class="col">
+        <div class="col-lg-4 col-sm-12">
             <img src="img\img27.png" style="width: inherit;">
 
         </div>
-        <div class="col">
+        <div class="col-lg-4 col-sm-12">
 
             <img src="img\img28.png" style="width: inherit;">
         </div>
-        <div class="col">
+        <div class="col-lg-4 col-sm-12">
             <img src="img\img29.png" style="width: inherit;">
 
         </div>
@@ -199,16 +191,16 @@
     </div>
 
 
-    <div class="video">
-        <center>
+<!--    <div class="video">-->
+<!--        <center>-->
 
-            <iframe style="border: solid #6554504f 3px;" width="560" height="315"
-                    src="https://www.youtube.com/embed/al-7KfqbFs8" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>
-        </center>
-    </div>
+<!--            <iframe style="border: solid #6554504f 3px;" width="560" height="315"-->
+<!--                    src="https://www.youtube.com/embed/al-7KfqbFs8" frameborder="0"-->
+<!--                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+<!--                    allowfullscreen>-->
+<!--            </iframe>-->
+<!--        </center>-->
+<!--    </div>-->
 </div>
 </body>
 </html>

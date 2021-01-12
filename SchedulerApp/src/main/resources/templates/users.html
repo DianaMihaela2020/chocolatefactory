@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Users</title>
+</head>
+<body>
+	<h2>User List</h2>
+	<table border="1">
+	   <tr>
+	       <td>ID</td>
+	       <td>Firstname</td>
+	       <td>Lastname</td>
+	       <td>Delete</td>
+	       <td>Update</td>
+	   </tr>
+		<tr th:each="user : ${userList}">
+			<td th:text="${user.idUser}" />
+			<td th:text="${user.firstname}" />
+			<td th:text="${user.lastname}" />
+			<td>
+				<form action="#" th:action="@{/users/delete}" method="post">
+				    <input type="hidden" name="idUser" th:value="${user.idUser}" />
+                    <input type="submit" value="Delete" />
+				</form>
+			</td>
+            <td>
+                <form action="#" th:action="@{/users/update}" method="get">
+                    <input type="hidden" name="idUser" th:value="${user.idUser}" />
+                    <input type="submit" value="Update" />
+                </form>
+            </td>
+		</tr>
+	</table>
+
+	<h2>Add new user</h2>
+	<form action="#" th:action="@{/users}" th:object="${newUser}"
+		method="post">
+		<p>
+			Firstname: <input type="text" th:field="*{firstname}" />
+		</p>
+		<p>
+			Lastname: <input type="text" th:field="*{lastname}" />
+		</p>
+		<p>
+			<input type="submit" value="Submit" />
+		</p>
+	</form>
+</body>
+</html>

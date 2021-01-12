@@ -1,5 +1,9 @@
 package com.chocolate.Lindt.controller;
 
+import com.chocolate.Lindt.model.CiocolataPersonalizata;
+import com.chocolate.Lindt.service.CiocolataPersonalizataService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -7,6 +11,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MainController {
+    @Autowired
+    private CiocolataPersonalizataService service;
+
     @RequestMapping("/")
     public String index() {
         return "home";
@@ -34,7 +41,6 @@ public class MainController {
     }
 
 
-
     @RequestMapping("/produse")
     public String produse() {
         return "produse";
@@ -49,18 +55,34 @@ public class MainController {
 // creearea metodei de ciocolata personalizata
 
 
-    @RequestMapping( value= "/creazaCiocolata", method = RequestMethod.POST)
+    @RequestMapping(
+            value = "/creeazaCiocolata",
+            method = RequestMethod.POST
+    )
+    public String creeazaCiocolata(@RequestParam(name = "sortiment") int sortiment,
+                                   @RequestParam(name = "aroma") int aroma,
+                                   @RequestParam(name = "ambalajModel") int ambalajModel,
+                                   @RequestParam(name = "culoareAmbalaj") int culoareAmbalaj,
+                                   @RequestParam(name = "culoareImprimata") int culoareImprimata,
+                                   @RequestParam(name = "accesoriu", required = false) Integer accesoriu) {
 
-    public String creazaCiocolata(@RequestParam(name = "sortiment",required = false) String sortiment,
-                                @RequestParam(name ="aroma", required= false)String aroma,
-                                @RequestParam(name ="ambalajModel", required = false) String ambalajModel,
-                                @RequestParam(name = "cutieCapac", required = false) String cutieCapac,
-                                @RequestParam(name = "culoareAmbalaj", required = false) String culoareAmbalaj,
-                                @RequestParam( name ="culoareImprimata", required = false)String culoareImprimata,
-                                @RequestParam(name ="accesoriu", required = false)String accesoriu ){
+        System.out.println("Utilizatorul a comandat o ciocolata personalizata, avand sortimentul cu id-ul: " +sortiment + ", aroma cu id-ul " + aroma + ", modelul ambalajului cu id-ul " + ambalajModel + ", avand culoarea cu id-ul " + culoareImprimata);
 
-      System.out.println( sortiment + aroma +ambalajModel +cutieCapac + culoareAmbalaj + culoareImprimata + accesoriu);
-      return "";
+        CiocolataPersonalizata ciocolataComandata = new CiocolataPersonalizata();
+        if (accesoriu !=null){
+            ciocolataComandata.setIdAccesoriu(accesoriu);
+            System.out.println("Accesoriu extra are id-ul " + accesoriu );
+        }
+
+        ciocolataComandata.setIdAmbalaj(ambalajModel);
+        ciocolataComandata.setIdCuloareAmbalaj(culoareAmbalaj);
+        ciocolataComandata.setIdAroma(aroma);
+        ciocolataComandata.setIdSortiment(sortiment);
+        ciocolataComandata.setIdCuloareText(culoareImprimata);
+
+        service.save(ciocolataComandata);
+
+        return "confirmare_comanda";
     }
 
 }

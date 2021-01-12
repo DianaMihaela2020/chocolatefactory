@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <link rel="icon" type="img\favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css\home.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
@@ -17,7 +23,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css\home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <title>Ciocolată personalizată</title>
 
@@ -26,79 +33,89 @@
 			background: #FFEFBA;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-		}
-
-
+}
 
     </style>
 </head>
 
 <body class="background">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="img\logo.jpg" style="max-width:80%">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-light">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">ACASĂ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="brand">BRAND</a>
+                </li>
 
-<ul class="d-flex align-items-center">
-    <li>
-        <img src="img\logo.jpg">
+                <li class="nav-item">
+                    <a class="nav-link" href="produse">PRODUSE</a>
+                </li>
 
-    </li>
-    <li>
-        <a href="/">ACASĂ</a>
-    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formular_ciocolata_personalizata">PERSONALIZARE</a>
+                </li>
 
-    <li>
-        <a href="brand">BRAND</a>
-    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formular_ciocolata">CAMPANII</a>
+                </li>
 
-    <li>
-        <a href="produse">PRODUSE</a>
-    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">CONTACT</a>
+                </li>
+            </ul>
 
-    <li>
-        <a href="formular_ciocolata_personalizata">PERSONALIZARE</a>
-    </li>
+        </div>
+    </div>
+</nav>
 
-    <li>
-        <a href="formular_ciocolata">CAMPANII</a>
-    </li>
-
-    <li>
-        <a href="contact">CONTACT</a>
-    </li>
-</ul>
 <div class="container">
 
     <center>
-        <h1 style="font-family: 'Parisienne', cursive; text-shadow: 2px 2px white; " class="mt-5">Ciocolată
+        <h3 style="font-family: 'Parisienne', cursive; text-shadow: 2px 2px white; " class="mt-5">Ciocolată
             personalizată
-            Lindt - <b>Holiday Season</b></h1>
+            Lindt - <b>Holiday Season</b></h3>
+        <div class="col-sm-12">
+            <img src="https://i.pinimg.com/originals/b9/7d/d5/b97dd5343f3021772769bcab3d0f98dd.png"
+                 style="margin-bottom: 5%; margin-top: 5%; width:70%; max-width:400px;">
+        </div>
 
-        <img src="https://i.pinimg.com/originals/b9/7d/d5/b97dd5343f3021772769bcab3d0f98dd.png" width="500" height="500"
-             style="margin-bottom: 5%; margin-top: 5%">
     </center>
 
     <center><h3>Creează un cadou personalizat</h3></center>
     <br>
     <br>
-    <p style="text-align: justify;"> Ciocolata Lindt este păstrată în ambalajul original și este dispusă în interiorul
-        unei cutii de tip husă care se personalizează în funcție de necesitățile dvs. Designul final al produsului este
-        unul deosebit.
-        În oferta noastră vei găsi produse din ciocolată care pot fi personalizate în cele mai creative moduri: ambalaje
-        pe care poți pune o fotografie, cutii elegante din lemn pe care putem grava diferite mesaje sau printuri pe
-        ciocolată și mesaje. Începe prin a crea propria ciocolată în configuratorul Secret Santa.
-    </p>
 
-    <form method="POST" action="/creazaCiocolata" class="mb-5">
-        <div class="container m-5">
+        <p style="text-align: justify;"> Ciocolata Lindt este păstrată în ambalajul original și este dispusă în interiorul
+            unei cutii de tip husă care se personalizează în funcție de necesitățile dvs. Designul final al produsului este
+            unul deosebit.
+            În oferta noastră vei găsi produse din ciocolată care pot fi personalizate în cele mai creative moduri: ambalaje
+            pe care poți pune o fotografie, cutii elegante din lemn pe care putem grava diferite mesaje sau printuri pe
+            ciocolată și mesaje. Începe prin a crea propria ciocolată în configuratorul Secret Santa.
+        </p>
 
-            <h4 class="text-center">Secret Santa</h4>
+    <form method="POST" action="/creeazaCiocolata" class="mb-5">
 
-            <div class="row mt-5">
-                <div class="col">
-                    <p><b> 1.Selecteză sortimentul de ciocolată preferat *</b></p>
+        <div class="container my-5">
+
+            <center><h4>Secret Santa</h4></center>
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 mt-5">
+                    <p><b> 1.Alege sortimentul de ciocolată preferat *</b></p>
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="sortiment" id="idExcellence"
-                               value="raspuns_Excellence">
+                               value="1" required>
                         <label class="form-check-label" for="idExcellence">
                             Lindt Excellence
                         </label>
@@ -107,7 +124,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="sortiment" id="idCreation"
-                               value="raspuns_Creation">
+                               value="2">
                         <label class="form-check-label" for="idCreation">
                             Lindt Creation
                         </label>
@@ -116,7 +133,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="sortiment" id="idPraline"
-                               value="raspuns_Praline">
+                               value="3">
                         <label class="form-check-label" for="idPraline">
                             Lindt Praline
                         </label>
@@ -125,7 +142,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="sortiment" id="idClasic"
-                               value="raspuns_Clasic">
+                               value="4">
                         <label class="form-check-label" for="idClasic">
                             Lindt Praline Clasic
                         </label>
@@ -133,7 +150,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="sortiment" id="idMiniPraline"
-                               value="raspuns_Mini">
+                               value="5">
                         <label class="form-check-label" for="idMiniPraline">
                             Lindt Mini Praline
                         </label>
@@ -141,18 +158,18 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                 </div>
 
-                <div class="col">
-                    <p><b>2.Selectează aroma preferată.</b></p>
+                <div class="col-lg-6 col-sm-12 mt-5">
+                    <p><b>2.Alege aroma preferată.</b></p>
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="aroma" id="idLapte" value="raspuns_lapte">
+                        <input class="form-check-input" type="radio" name="aroma" id="idLapte" value="1" required>
                         <label class="form-check-label" for="idLapte">
                             lapte
                         </label>
                     </div>
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="aroma" id="idCacao" value="raspuns_Cacao">
+                        <input class="form-check-input" type="radio" name="aroma" id="idCacao" value="2">
                         <label class="form-check-label" for="idCacao">
                             cacao
                         </label>
@@ -160,7 +177,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="aroma" id="idAlune" value="raspuns_Alune">
+                        <input class="form-check-input" type="radio" name="aroma" id="idAlune" value="3">
                         <label class="form-check-label" for="idAlune">
                             alune
                         </label>
@@ -169,7 +186,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="aroma" id="idMigdale"
-                               value="raspuns_Migdale">
+                               value="4">
                         <label class="form-check-label" for="idMigdale">
                             migdale
                         </label>
@@ -177,7 +194,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="aroma" id="idCafea" value="raspuns_Cafea">
+                        <input class="form-check-input" type="radio" name="aroma" id="idCafea" value="5">
                         <label class="form-check-label" for="idCafea">
                             cafea
                         </label>
@@ -186,7 +203,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="aroma" id="idCappucino"
-                               value="raspuns_Capppucino">
+                               value="6">
                         <label class="form-check-label" for="idCappucino">
                             cappuccino
                         </label>
@@ -194,7 +211,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="aroma" id="idRom" value="raspuns_Rom">
+                        <input class="form-check-input" type="radio" name="aroma" id="idRom" value="7">
                         <label class="form-check-label" for="idRom">
                             rom
                         </label>
@@ -202,7 +219,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="aroma" id="idMenta" value="raspuns_Menta">
+                        <input class="form-check-input" type="radio" name="aroma" id="idMenta" value="8">
                         <label class="form-check-label" for="idMenta">
                             mentă
                         </label>
@@ -211,7 +228,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="aroma" id="idScortisoara"
-                               value="raspuns_Scortisoara">
+                               value="9">
                         <label class="form-check-label" for="idScortisoara">
                             scorțișoară
                         </label>
@@ -219,7 +236,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="aroma" id="idCaramel"
-                               value="raspuns_Caramel">
+                               value="10">
                         <label class="form-check-label" for="idCaramel">
                             caramel
                         </label>
@@ -227,7 +244,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="aroma" id="idChili" value="raspuns_Chili">
+                        <input class="form-check-input" type="radio" name="aroma" id="idChili" value="11">
                         <label class="form-check-label" for="idChili">
                             chili
                         </label>
@@ -235,80 +252,80 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 mt-5">
                     <p><b>3.Alege modelul ambalajului.</b></p>
 
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="ambalajModel" id="idStandard"
-                               value="raspuns_standard">
+                               value="1" required>
                         <label class="form-check-label" for="idStandard">
-                            standard
+                            standard, 300g
                         </label>
                     </div>
 
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="ambalajModel" id="idPungaMini"
-                               value="raspuns_Mini">
+                               value="2">
                         <label class="form-check-label" for="IdPungaMini">
-                            pungă personalizată 50 ml
+                            pungă personalizată, 500g
                         </label>
                     </div>
 
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="ambalajModel" id="IdPungaMed" value="
-							raspuns_Med">
+							3">
                         <label class="form-check-label" for="IdPungaMed">
-                            pungă personalizată 70 ml
+                            pungă personalizată, 700g
                         </label>
                     </div>
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="ambalajModel" id="IdPungaMax"
-                               value="raspuns_Max">
+                               value="4">
                         <label class="form-check-label" for="IdPungaMax">
-                            pungă personalizată 100 ml
+                            pungă personalizată, 1kg
                         </label>
                     </div>
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="ambalajModel" id="IdPachetMini"
-                               value="raspuns_PachetMini">
+                               value="5">
                         <label class="form-check-label" for="IdPachetMini">
-                            pachet cadou 0.5kg
+                            pachet cadou, 500g
                         </label>
                     </div>
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="ambalajModel" id="IdPachetMax"
-                               value="raspuns_PachetMax">
+                               value="6">
                         <label class="form-check-label" for="IdPachetMax">
-                            pachet cadou 1kg
+                            pachet cadou, 1kg
                         </label>
                     </div>
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="cutieCapac" id="IdCapacTransparent"
-                               value="raspuns_CapacTransparent">
+                        <input class="form-check-input" type="radio" name="ambalajModel" id="IdCapacTransparent"
+                               value="7">
                         <label class="form-check-label" for="IdCapacTransparent">
-                            cutie cu capac transparent 1kg
+                            cutie cu capac transparent, 1kg
                         </label>
                     </div>
 
                 </div>
 
-                <div class="col">
+                <div class="col-lg-6 col-sm-12 mt-5">
 
                     <p><b>4.Alege culoarea ambalajului</b></p>
 
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareAmbalaj" id="idCuloareAmbalajRosu"
-                               value="raspuns_Rosu">
+                               value="1"required>
                         <label class="form-check-label" for="idCuloareAmbalajRosu">
                             roșu
                         </label>
@@ -316,7 +333,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareAmbalaj" id="idCuloareAmbalajAuriu"
-                               value="raspuns_Auriu">
+                               value="2">
                         <label class="form-check-label" for="idCuloareAmbalajAuriu">
                             auriu
                         </label>
@@ -324,7 +341,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareAmbalaj"
-                               id="idCuloareAmbalajArgintiu1" value="raspuns_Argintiu">
+                               id="idCuloareAmbalajArgintiu1" value="3">
                         <label class="form-check-label" for="idCuloareAmbalajArgintiu1">
                             argintiu
                         </label>
@@ -332,7 +349,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareAmbalaj" id="idCuloareAmbalajViolet"
-                               value="raspuns_Violet">
+                               value="4">
                         <label class="form-check-label" for="idCuloareAmbalajViolet">
                             violet
                         </label>
@@ -341,7 +358,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareAmbalaj" id="idCuloareAmbalajFuchsia"
-                               value="raspuns_Fuchsia">
+                               value="5">
                         <label class="form-check-label" for="idCuloareAmbalajFuchsia">
                             fuchsia
                         </label>
@@ -349,7 +366,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareAmbalaj" id="idCuloareAmbalajMaro"
-                               value="raspuns_Maro">
+                               value="6">
                         <label class="form-check-label" for="idCuloareAmbalajMaro">
                             maro
                         </label>
@@ -358,7 +375,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareAmbalaj" id="idCuloareAmbalajAlb"
-                               value="raspuns_Alb">
+                               value="7">
                         <label class="form-check-label" for="idCuloareAmbalajAlb">
                             alb
                         </label>
@@ -367,7 +384,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareAmbalaj" id="IdCuloareAmbalajDegrade"
-                               value="raspuns_Degrade">
+                               value="8">
                         <label class="form-check-label" for="IdCuloareAmbalajDegrade">
                             degrade
                         </label>
@@ -376,13 +393,13 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
                 </div>
             </div>
 
-            <div class="row mt-5">
-                <div class="col">
-                    <p><b>5.Vă rugăm să selectați culoarea pe care doriți să o imprimați pe ambalaj.</b></p>
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 mt-5">
+                    <p><b>5.Alege culoarea textului imprimat pe ambalaj.</b></p>
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareImprimata" id="IdImprimareAuriuMat"
-                               value="raspuns_ImprimareAuriuMat">
+                               value="1"required>
                         <label class="form-check-label" for="IdImprimareAuriuMat">
                             auriu mat
                         </label>
@@ -391,7 +408,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareImprimata"
-                               id="IdImprimareAuriuMetalic" value="raspuns_ImprimareAuriuMetalic">
+                               id="IdImprimareAuriuMetalic" value="2">
                         <label class="form-check-label" for="IdImprimareAuriuMetalic">
                             auriu metalic
                         </label>
@@ -399,7 +416,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareImprimata" id="IdStelute"
-                               value="raspuns_ImprimareStelute">
+                               value="3">
                         <label class="form-check-label" for="IdStelute">
                             steluțe argintii
                         </label>
@@ -408,7 +425,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareImprimata" id="IdArgintiuMat"
-                               value="raspuns_ImprimareArgintiuMat">
+                               value="4">
                         <label class="form-check-label" for="IdArgintiuMat">
                             argintiu mat
                         </label>
@@ -417,7 +434,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareImprimata" id="IdArgintiuMetalic"
-                               value="raspuns_ImprimareArgintiuMetalic">
+                               value="5">
                         <label class="form-check-label" for="IdArgintiuMetalic">
                             argintiu metalic
                         </label>
@@ -426,7 +443,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareImprimata" id="IdMagneta"
-                               value="raspuns_ImprimareMagneta">
+                               value="6">
                         <label class="form-check-label" for="IdMagneta">
                             magneta
                         </label>
@@ -435,20 +452,20 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="culoareImprimata" id="IdCuloareImprimata"
-                               value="raspuns_ImprimareViolet">
+                               value="7">
                         <label class="form-check-label" for="IdCuloareImprimata">
                             violet
                         </label>
                     </div>
 
                 </div>
-                <div class="col">
+                <div class="col-lg-6 col-sm-12 mt-5">
 
-                    <p><b>6.Dacă doriți puteți alege și un accesoriu extra</b></p>
+                    <p><b>6.Dacă doriți puteți alege și un accesoriu extra(opțional).</b></p>
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="accesoriu" id="IdPanglicaEcru"
-                               value="raspuns_Ecru">
+                               value="1">
                         <label class="form-check-label" for="IdPanglicaEcru">
                             panglică ecru
                         </label>
@@ -456,7 +473,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="accesoriu" id="IdFolieAurie"
-                               value="raspuns_FolieAurie">
+                               value="2">
                         <label class="form-check-label" for="IdFolieAurie">
                             folie ciocolată aurie
                         </label>
@@ -465,7 +482,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="accesoriu" id="IdFundaRosie"
-                               value="raspuns_FundaRosie">
+                               value="3">
                         <label class="form-check-label" for="IdFundaRosie">
                             panglică fundă roșie
                         </label>
